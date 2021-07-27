@@ -34,5 +34,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2"
   }
 }
