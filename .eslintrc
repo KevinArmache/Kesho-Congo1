@@ -31,6 +31,6 @@
     ],
     "env": {
       "browser": true
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode" // supprimer en cas de bug
+    }
+   
   }
