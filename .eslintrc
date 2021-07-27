@@ -1,36 +1,36 @@
 {
-    "parserOptions": {
-      "ecmaVersion": 2019,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "plugins": [
-      "jest"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "eslint-config-prettier"
-    ],
-    "rules": {
-      "strict": [ "error", "never"]
-    },
-    "overrides": [
-      {
-        "files": [
-          "**/*.test.js",
-          "**/*.test.jsx",
-          "**/*.spec.js",
-          "**/*.spec.jsx"
-        ],
-        "env": {
-          "jest": true
-        }
-      }
-    ],
-    "env": {
-      "browser": true
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
-   
+  },
+  "plugins": ["jest", "react"],
+  "extends": ["eslint:recommended", "eslint-config-prettier"],
+  "rules": {
+    "react/jsx-uses-react": "error",   
+    "react/jsx-uses-vars": "error" ,
+    "strict": [
+      "error",
+      "never"
+    
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js",
+        "**/*.test.jsx",
+        "**/*.spec.js",
+        "**/*.spec.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "env": {
+    "browser": true
   }
+}
